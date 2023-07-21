@@ -10,19 +10,15 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Navbar />
       <Routes>
-        <Route path='/' element={
-          <div>
-            <Hero />
-            <About />
-            <Services />
-            <Contact />
-            <Footer />
-          </div>
-        } />
         <Route path='/privacypolicy' element={<Privacypolicy />} />
       </Routes>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Contact />
+      <Footer />
     </div>
   );
 }

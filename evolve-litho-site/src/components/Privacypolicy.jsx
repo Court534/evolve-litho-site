@@ -1,8 +1,27 @@
+import Logo from "../assets/evolve-litho-logo.jpg";
+import { Link } from "react-scroll";
+import { HiArrowCircleLeft } from "react-icons/hi";
+
 const Privacypolicy = () => {
   return (
     <div>
+      {/* Navbar/Return */}
+      <div className="fixed flex justify-between items-center h-26 w-full mx-auto p-6 text-white bg-black">
+      {/* Logo */}
+      <a href="/">
+        <img src={Logo} alt="Company Logo" className="h-28" />
+      </a>
+
+      {/* Nav Items */}
+      <ul className="flex gap-4 max-[767px]:hidden cursor-pointer">
+        <li className="p-4 hover:font-bold hover:scale-110 hover:text-gray-400">
+            <a href="/" className="hover:text-gray-400 hover:scale-110"><HiArrowCircleLeft size={50}/></a>
+        </li>
+        </ul>
+      </div>
+      
       {/* Container */}
-      <div className="text-white w-full min-h-screen justify-center items-center p-4 pt-40">
+      <div className="text-white w-full min-h-screen justify-center items-center p-4 pt-44">
         <p className="font-bold border-b-2 text-4xl md:text-5xl inline text-white">
           Privacy Policy
         </p>
