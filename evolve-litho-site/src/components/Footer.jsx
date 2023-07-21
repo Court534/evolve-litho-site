@@ -6,7 +6,7 @@ const Footer = () => {
       {/* Container */}
       <div className='flex justify-between items-center sm:px-12 px-4 bg-black py-7'>
         <div className='grid gap-10 justify-center items-center text-center'>
-        <p>© 2023 Lovial Design Ltd & <a href="/privacypolicy" className="text-blue-600 dark:text-blue-500 hover:underline">Privacy Policy</a></p>
+        <p>© 2023 Evolve Litho Limited  <a href="/privacypolicy" className="text-blue-600 dark:text-blue-500 hover:underline">Privacy Policy</a></p>
         </div>
         <div className='grid grid-cols-3 gap-3 px-4'>
           <a className='hover:text-gray-400 hover:scale-110' href="https://www.google.com/maps/place/Evolve+Litho/@51.5700493,-1.826182,15z/data=!4m6!3m5!1s0x487144ee2d16a165:0x30554c17aed44495!8m2!3d51.5700493!4d-1.826182!16s%2Fg%2F1tfp1xj0?entry=ttu" target="_blank" rel="noreferrer"><HiHome size={30}/></a>

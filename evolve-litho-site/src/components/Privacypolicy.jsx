@@ -1,5 +1,4 @@
 import Logo from "../assets/evolve-litho-logo.jpg";
-import { Link } from "react-scroll";
 import { HiArrowCircleLeft } from "react-icons/hi";
 
 const Privacypolicy = () => {

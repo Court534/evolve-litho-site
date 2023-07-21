@@ -8,7 +8,7 @@ const Success = () => {
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <h1 className="text-4xl font-bold p-4">Thank You !</h1>
-          <p className="pb-4">Thank you for your interest! Check your email for a link to the guide.</p>
+          <p className="pb-4">Thank you for your interest! Someone will be in contact as soon as possible</p>
             <a
             href="/"
             className="inline-flex items-center px-4 py-2 text-white border border-white rounded hover:bg-gray-600 focus:outline-none focus:ring">
