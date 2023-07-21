@@ -54,10 +54,26 @@ const Navbar = () => {
         }
       >
         <ul className="p-4">
-          <li className="p-4 hover:font-bold hover:scale-110">Home</li>
-          <li className="p-4 hover:font-bold hover:scale-110">About</li>
-          <li className="p-4 hover:font-bold hover:scale-110">Services</li>
-          <li className="p-4 hover:font-bold hover:scale-110">Contact</li>
+        <li className="p-4 hover:font-bold hover:scale-110 hover:text-gray-400">
+          <Link to="hero" smooth="true" duration={500} onClick={() => setNav(false)}>
+            Home
+          </Link>
+        </li>
+        <li className="p-4 hover:font-bold hover:scale-110 hover:text-gray-400">
+        <Link to='about' smooth='true' offset={-200} duration={500} onClick={() => setNav(false)}>
+            About
+          </Link>
+        </li>
+        <li className="p-4 hover:font-bold hover:scale-110 hover:text-gray-400">
+        <Link to='services' smooth='true' offset={-180} duration={500} onClick={() => setNav(false)}>
+            Services
+          </Link>
+        </li>
+        <li className="p-4 hover:font-bold hover:scale-110 hover:text-gray-400">
+        <Link to='contact' smooth='true' offset={-150} duration={500} onClick={() => setNav(false)}>
+            Contact
+          </Link>
+        </li>
         </ul>
       </div>
     </div>
