@@ -2,18 +2,18 @@ import React from "react";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen text-white">
-      <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="font-bold border-b-2 text-4xl inline">
+    <div name="about" className="w-full min-h-screen text-white">
+      <div className="flex flex-col justify-center items-center w-full h-full pb-20">
+        <div className="font-bold border-b-2 text-4xl md:text-5xl inline">
           <p>About us</p>
         </div>
-        <div className="flex flex-row max-w-[1000px] justify-center items-center">
-          <div>
-            <i className="p-4 text-5xl font-semibold font-">
-              OVER 25 YEARS OF EXPERIENCE IN THE DIGITAL & LITHO PRINT INDUSTRY
+        <div className="flex flex-col md:flex-row max-w-[1000px] justify-center items-center mx-auto p-4">
+          <div className="text-2xl md:text-5xl font-semibold sm:text-center pt-8">
+            <i>
+              WITH OVER 25 YEARS OF EXPERIENCE IN THE DIGITAL & LITHO PRINT INDUSTRY
             </i>
           </div>
-          <div className="p-4 pt-20 text-2xl">
+          <div className="p-4 pt-10 text-xl md:text-2xl">
             <p>
               Located in West Swindon’s Rivermead Business Centre, Evolve Litho
               are able produce a variety of printing ranging from leaflets to

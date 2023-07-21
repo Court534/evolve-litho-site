@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react';
 import Logo from '../assets/evolve-litho-logo.jpg'
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -19,10 +18,10 @@ const Navbar = () => {
       
       {/* Nav Items */}
       <ul className='flex gap-4 max-[767px]:hidden'>
-        <li className='p-4 hover:font-bold hover:scale-110 hover:text-gray-600'>Home</li>
-        <li className='p-4 hover:font-bold hover:scale-110 hover:text-gray-600'>About</li>
-        <li className='p-4 hover:font-bold hover:scale-110 hover:text-gray-600'>Services</li>
-        <li className='p-4 hover:font-bold hover:scale-110 hover:text-gray-600'>Contact</li>
+        <li className='p-4 hover:font-bold hover:scale-110 hover:text-gray-400'>Home</li>
+        <li className='p-4 hover:font-bold hover:scale-110 hover:text-gray-400'>About</li>
+        <li className='p-4 hover:font-bold hover:scale-110 hover:text-gray-400'>Services</li>
+        <li className='p-4 hover:font-bold hover:scale-110 hover:text-gray-400'>Contact</li>
       </ul>
 
       {/* Hamburger Menu */}
