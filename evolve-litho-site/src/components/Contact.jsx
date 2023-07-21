@@ -1,37 +1,37 @@
 import { useFormik } from "formik";
-import * as Yup from 'yup'
-import { useNavigate } from 'react-router-dom'
+import * as Yup from "yup";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
-
-  const nav = useNavigate()
+  const nav = useNavigate();
 
   // Formik Logic
-const formik = useFormik({
-  initialValues: {
-    name: '',
-    email: '',
-    subject: '', 
-    message: '',
-    pp: '',
-  },
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+      pp: false,
+    },
 
-  // Validate form
-  validationSchema: Yup.object({
-    name: Yup.string().max(20, 'Name must not be longer than 20 characters'),
-    email: Yup.string().email('Invalid email address'),
-    subject: Yup.string(),
-    message: Yup.string(),
-    pp: Yup.array().required('You must agree to our Privacy Policy')
-  }),
+    // Validate form
+    validationSchema: Yup.object({
+      name: Yup.string().max(20, "Name must not be longer than 20 characters"),
+      email: Yup.string().email("Invalid email address"),
+      subject: Yup.string(),
+      message: Yup.string(),
+      pp: Yup.boolean().oneOf([true], "You must agree to our Privacy Policy"),
+    }),
 
-  // Submit form
-  onSubmit: (values) => {
-    console.log(values);
-    nav('/success')
-  }
-})
-  
+    // Submit form
+    onSubmit: (values, { setSubmitting }) => {
+      console.log(values);
+      nav("/success");
+      setSubmitting(false);
+    },
+  });
+
   return (
     <div
       name="contact"
@@ -94,7 +94,8 @@ const formik = useFormik({
           <input
             className="w-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
             type="checkbox"
-            value='checked'
+            name="pp"
+            checked={formik.values.pp}
             onChange={formik.handleChange}
             id="contact-form-checkbox"
             required
@@ -104,7 +105,13 @@ const formik = useFormik({
             className="ml-2 text-sm font-medium dark:text-gray-300 text-white"
             htmlFor="contact-form-checkbox"
           >
-            By checking this box you agree with our{" "}<a href="/privacypolicy" className="text-blue-600 dark:text-blue-500 hover:underline">Privacy Policy</a>
+            By checking this box you agree with our{" "}
+            <a
+              href="/privacypolicy"
+              className="text-blue-600 dark:text-blue-500 hover:underline"
+            >
+              Privacy Policy
+            </a>
           </label>
         </div>
         <button

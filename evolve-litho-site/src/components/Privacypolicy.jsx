@@ -13,7 +13,7 @@ const Privacypolicy = () => {
       </a>
 
       {/* Nav Items */}
-      <ul className="flex gap-4 max-[767px]:hidden cursor-pointer">
+      <ul className="flex gap-4 cursor-pointer">
         <li className="p-4 hover:font-bold hover:scale-110 hover:text-gray-400">
             <a href="/" className="hover:text-gray-400 hover:scale-110"><HiArrowCircleLeft size={50}/></a>
         </li>
