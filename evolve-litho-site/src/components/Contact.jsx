@@ -9,7 +9,7 @@ const Contact = () => {
         method="POST"
         action="/contact"
         data-netlify="true"
-        onSubmit="submit"
+        data-netlify-honeypot="bot-field"
         className="flex flex-col max-w-[600px] w-full text-center"
       >
         <div className="pb-8 ">
