@@ -12,9 +12,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className='fixed flex justify-between items-center h-24 w-full mx-auto p-6 text-white bg-black'>
+    <div className='fixed flex justify-between items-center h-26 w-full mx-auto p-6 text-white bg-black'>
       {/* Logo */}
-      <a href="/"><img src={Logo} alt="Company Logo" className='h-28 pt-6'/></a>
+      <a href="/"><img src={Logo} alt="Company Logo" className='h-28'/></a>
       
       {/* Nav Items */}
       <ul className='flex gap-4 max-[767px]:hidden'>
