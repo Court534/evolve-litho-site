@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed flex justify-between items-center h-26 w-full mx-auto p-6 text-white bg-black">
+    <div className="fixed flex justify-between items-center h-26 w-full mx-auto p-6 text-white bg-black z-10">
       {/* Logo */}
       <a href="/">
         <img src={Logo} alt="Company Logo" className="h-28" />
@@ -35,7 +35,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="p-4 hover:font-bold hover:scale-110 hover:text-gray-400">
-        <Link to='contact' smooth='true' duration={500} >
+        <Link to='contact' smooth='true' offset={-50} duration={500} >
             Contact
           </Link>
         </li>

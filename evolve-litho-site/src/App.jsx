@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Privacypolicy from "./components/Privacypolicy";
 import Success from './components/Success'
 import { Route, Routes } from "react-router-dom";
+import Carousel from "./components/Carousel";
 
 function MainComponents() {
   return (
@@ -15,6 +16,7 @@ function MainComponents() {
       <Hero />
       <About />
       <Services />
+      <Carousel />
       <Contact />
       <Footer />
     </>
