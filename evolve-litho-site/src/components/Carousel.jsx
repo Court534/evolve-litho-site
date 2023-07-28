@@ -61,9 +61,9 @@ const Carousel = () => {
         <div
           key={slideIndex}
           onClick={() => goToSlide(slideIndex)}
-          className='text-2xl cursor-pointer'
+          className='text-2xl cursor-pointer text-white hover:text-gray-400'
         >
-          <RxDotFilled className="text-white hover:text-gray-400 hover:scale-110"/>
+          <RxDotFilled />
         </div>
       ))}
     </div>
